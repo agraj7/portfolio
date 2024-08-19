@@ -1,0 +1,370 @@
+/* Reset some default browser styles */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container to hold both navbar and content */
+.container {
+    display: flex;
+    min-height: 100vh; /* Ensure container takes full viewport height */
+}
+
+/* Navigation bar styles */
+.navbar {
+    width: 250px; /* Width of the navbar */
+    background: #333;
+    color: #fff;
+    height: 100vh; /* Full viewport height */
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    overflow-y: auto; /* Scroll if content exceeds viewport height */
+}
+
+/* Navigation links */
+.navbar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.navbar ul li {
+    margin-bottom: 10px;
+}
+
+.navbar ul li a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.navbar ul li a:hover {
+    background: #555;
+}
+
+/* Main content area */
+.content {
+    margin-left: 250px; /* Space for the navbar */
+    padding: 40px 20px;
+    background: url('background-image.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #000000;
+    text-align: center;
+    width: calc(100% - 250px); /* Adjust width to fit the remaining space */
+    min-height: 100vh; /* Ensure content area takes full viewport height */
+}
+
+/* Profile photo styles */
+.profile-photo {
+    width: 150px;
+    height: 150px;
+    background: url('myphoto.jpg') no-repeat center center;
+    background-size: cover;
+    border-radius: 50%;
+    margin: 0 auto;
+    border: 5px solid #fff;
+}
+
+/* Heading and paragraph styles in home section */
+.home h1 {
+    margin-top: 20px;
+    font-size: 2.5em;
+}
+
+.home p {
+    margin-top: 10px;
+}
+
+.home a {
+    color: #000000;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.home a:hover {
+    text-decoration: underline;
+}
+
+/* Experience section styles */
+.experience-section {
+    margin-bottom: 20px;
+}
+
+.experience-title {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.experience-date {
+    font-style: italic;
+    color: gray;
+}
+
+.experience-description ul {
+    list-style: disc;
+    margin-left: 20px;
+}
+
+.experience-description li {
+    margin-bottom: 10px;
+}
+
+/* Additional styles for other sections */
+section {
+    margin: 20px;
+}
+
+section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+section p {
+    margin-bottom: 20px;
+}
+/* Reset some default browser styles */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container to hold both navbar and content */
+.container {
+    display: flex;
+    min-height: 100vh; /* Ensure container takes full viewport height */
+}
+
+/* Navigation bar styles */
+.navbar {
+    width: 250px; /* Width of the navbar */
+    background: #333;
+    color: #fff;
+    height: 100vh; /* Full viewport height */
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    overflow-y: auto; /* Scroll if content exceeds viewport height */
+}
+
+/* Navigation links */
+.navbar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.navbar ul li {
+    margin-bottom: 10px;
+}
+
+.navbar ul li a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.navbar ul li a:hover {
+    background: #555;
+}
+
+/* Main content area */
+.content {
+    margin-left: 250px; /* Space for the navbar */
+    padding: 40px 20px;
+    background: url('background-image.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #000000;
+    text-align: center;
+    width: calc(100% - 250px); /* Adjust width to fit the remaining space */
+    min-height: 100vh; /* Ensure content area takes full viewport height */
+}
+
+/* Profile photo styles */
+.profile-photo {
+    width: 150px;
+    height: 150px;
+    background: url('myphoto.jpg') no-repeat center center;
+    background-size: cover;
+    border-radius: 50%;
+    margin: 0 auto;
+    border: 5px solid #fff;
+}
+
+/* Heading and paragraph styles in home section */
+.home h1 {
+    margin-top: 20px;
+    font-size: 2.5em;
+}
+
+.home p {
+    margin-top: 10px;
+}
+
+.home a {
+    color: #000000;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.home a:hover {
+    text-decoration: underline;
+}
+
+/* Experience section styles */
+.experience-section {
+    margin-bottom: 20px;
+}
+
+.experience-title {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.experience-date {
+    font-style: italic;
+    color: gray;
+}
+
+.experience-description ul {
+    list-style: disc;
+    margin-left: 20px;
+}
+
+.experience-description li {
+    margin-bottom: 10px;
+}
+
+/* Additional styles for other sections */
+section {
+    margin: 20px;
+}
+
+section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+section p {
+    margin-bottom: 20px;
+}
+/* Mobile Styles */
+@media (max-width: 275px) {
+    /* Adjust body padding and font size */
+    body {
+        padding: 0;
+        font-size: 14px;
+    }
+    
+    /* Adjust navbar width and content margin */
+    .navbar {
+        width: 100%;
+        height: auto;
+        position: relative; /* Allow the navbar to flow with content */
+        box-shadow: none; /* Remove box shadow on mobile */
+    }
+    
+    .navbar ul {
+        padding: 0;
+    }
+    
+    .navbar ul li {
+        margin-bottom: 5px;
+    }
+    
+    .navbar ul li a {
+        padding: 8px;
+        font-size: 14px;
+    }
+    
+    /* Adjust content margin and padding */
+    .content {
+        margin-left: 0; /* Remove margin to fit content */
+        padding: 20px;
+        width: 100%; /* Ensure full width on mobile */
+        background-size: auto; /* Adjust background size */
+        text-align: left; /* Left align text for better readability */
+    }
+    
+    /* Profile photo adjustments */
+    .profile-photo {
+        width: 100px;
+        height: 100px;
+        border: 3px solid #fff;
+    }
+    
+    /* Heading and paragraph styles */
+    .home h1 {
+        font-size: 1.8em;
+    }
+    
+    .home p {
+        font-size: 0.9em;
+    }
+    
+    .home a {
+        font-size: 0.9em;
+    }
+    
+    /* Adjust experience section styles */
+    .experience-section {
+        margin-bottom: 10px;
+    }
+    
+    .experience-title {
+        font-size: 1em;
+    }
+    
+    .experience-date {
+        font-size: 0.9em;
+    }
+    
+    .experience-description ul {
+        margin-left: 10px;
+    }
+    
+    .experience-description li {
+        font-size: 0.9em;
+    }
+    
+    /* Adjust other sections */
+    section {
+        margin: 10px;
+    }
+    
+    section h2 {
+        font-size: 1.5em;
+    }
+    
+    section p {
+        font-size: 0.9em;
+    }
+}
