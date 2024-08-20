@@ -3,6 +3,7 @@ body, h1, h2, h3, p, ul, li {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    list-style: none;
 }
 
 /* Basic styles */
@@ -13,36 +14,34 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
 /* Container to hold both navbar and content */
 .container {
     display: flex;
+    flex-direction: column; /* Default to column layout */
     min-height: 100vh; /* Ensure container takes full viewport height */
 }
 
 /* Navigation bar styles */
 .navbar {
-    width: 250px; /* Width of the navbar */
     background: #333;
     color: #fff;
-    height: 100vh; /* Full viewport height */
-    position: fixed;
-    top: 0;
-    left: 0;
-    padding: 20px;
-    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
-    overflow-y: auto; /* Scroll if content exceeds viewport height */
+    height: auto;
+    padding: 10px 20px;
+    overflow-y: hidden; /* Hide overflow on mobile */
 }
 
 /* Navigation links */
 .navbar ul {
-    list-style: none;
+    display: flex; /* Flexbox for row layout */
+    justify-content: space-around; /* Space out items evenly */
     padding: 0;
 }
 
 .navbar ul li {
-    margin-bottom: 10px;
+    margin-bottom: 0; /* Remove margin for horizontal layout */
 }
 
 .navbar ul li a {
@@ -59,31 +58,33 @@ body {
 
 /* Main content area */
 .content {
-    margin-left: 250px; /* Space for the navbar */
-    padding: 40px 20px;
+    padding: 20px;
     background: url('background-image.jpg') no-repeat center center fixed;
     background-size: cover;
-    color: #000000;
+    color: #000;
     text-align: center;
-    width: calc(100% - 250px); /* Adjust width to fit the remaining space */
-    min-height: 100vh; /* Ensure content area takes full viewport height */
+    min-height: calc(100vh - 60px); /* Ensure content area takes full viewport height minus navbar height */
 }
 
 /* Profile photo styles */
 .profile-photo {
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
     background: url('myphoto.jpg') no-repeat center center;
     background-size: cover;
     border-radius: 50%;
     margin: 0 auto;
-    border: 5px solid #fff;
+    border: 3px solid #fff;
+}
+
+.home {
+    text-align: center;
 }
 
 /* Heading and paragraph styles in home section */
 .home h1 {
     margin-top: 20px;
-    font-size: 2.5em;
+    font-size: 1.8em;
 }
 
 .home p {
@@ -91,7 +92,7 @@ body {
 }
 
 .home a {
-    color: #000000;
+    color: #000;
     text-decoration: none;
     font-weight: bold;
 }
@@ -137,193 +138,47 @@ section h2 {
 section p {
     margin-bottom: 20px;
 }
-/* Reset some default browser styles */
-body, h1, h2, h3, p, ul, li {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
-/* Basic styles */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f5f5f5;
-    color: #333;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-}
-
-/* Container to hold both navbar and content */
-.container {
-    display: flex;
-    min-height: 100vh; /* Ensure container takes full viewport height */
-}
-
-/* Navigation bar styles */
-.navbar {
-    width: 250px; /* Width of the navbar */
-    background: #333;
-    color: #fff;
-    height: 100vh; /* Full viewport height */
-    position: fixed;
-    top: 0;
-    left: 0;
-    padding: 20px;
-    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
-    overflow-y: auto; /* Scroll if content exceeds viewport height */
-}
-
-/* Navigation links */
-.navbar ul {
-    list-style: none;
-    padding: 0;
-}
-
-.navbar ul li {
-    margin-bottom: 10px;
-}
-
-.navbar ul li a {
-    color: #fff;
-    text-decoration: none;
-    display: block;
-    padding: 10px;
-    border-radius: 4px;
-}
-
-.navbar ul li a:hover {
-    background: #555;
-}
-
-/* Main content area */
-.content {
-    margin-left: 250px; /* Space for the navbar */
-    padding: 40px 20px;
-    background: url('background-image.jpg') no-repeat center center fixed;
-    background-size: cover;
-    color: #000000;
-    text-align: center;
-    width: calc(100% - 250px); /* Adjust width to fit the remaining space */
-    min-height: 100vh; /* Ensure content area takes full viewport height */
-}
-
-/* Profile photo styles */
-.profile-photo {
-    width: 150px;
-    height: 150px;
-    background: url('myphoto.jpg') no-repeat center center;
-    background-size: cover;
-    border-radius: 50%;
-    margin: 0 auto;
-    border: 5px solid #fff;
-}
-
-/* Heading and paragraph styles in home section */
-.home h1 {
-    margin-top: 20px;
-    font-size: 2.5em;
-}
-
-.home p {
-    margin-top: 10px;
-}
-
-.home a {
-    color: #000000;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.home a:hover {
-    text-decoration: underline;
-}
-
-/* Experience section styles */
-.experience-section {
-    margin-bottom: 20px;
-}
-
-.experience-title {
-    font-size: 1.2em;
-    font-weight: bold;
-}
-
-.experience-date {
-    font-style: italic;
-    color: gray;
-}
-
-.experience-description ul {
-    list-style: disc;
-    margin-left: 20px;
-}
-
-.experience-description li {
-    margin-bottom: 10px;
-}
-
-/* Additional styles for other sections */
-section {
-    margin: 20px;
-}
-
-section h2 {
-    font-size: 2em;
-    margin-bottom: 20px;
-}
-
-section p {
-    margin-bottom: 20px;
-}
 /* Mobile Styles */
-@media (max-width: 275px) {
+@media (max-width: 768px) {
     /* Adjust body padding and font size */
     body {
-        padding: 0;
         font-size: 14px;
     }
     
-    /* Adjust navbar width and content margin */
-    .navbar {
-        width: 100%;
-        height: auto;
-        position: relative; /* Allow the navbar to flow with content */
-        box-shadow: none; /* Remove box shadow on mobile */
-    }
-    
+    /* Adjust navbar to stack items vertically */
     .navbar ul {
-        padding: 0;
+        flex-direction: column;
+        align-items: flex-start; /* Align items to the left */
     }
     
     .navbar ul li {
-        margin-bottom: 5px;
+        margin-bottom: 5px; /* Add space between items */
     }
     
     .navbar ul li a {
-        padding: 8px;
-        font-size: 14px;
+        padding: 10px 20px; /* Add more padding for better touch targets */
+        width: 100%; /* Make links take full width */
     }
     
-    /* Adjust content margin and padding */
+    /* Adjust content padding and margin */
     .content {
-        margin-left: 0; /* Remove margin to fit content */
-        padding: 20px;
-        width: 100%; /* Ensure full width on mobile */
+        margin-top: 60px; /* Space for fixed navbar */
+        padding: 10px;
         background-size: auto; /* Adjust background size */
         text-align: left; /* Left align text for better readability */
     }
     
     /* Profile photo adjustments */
     .profile-photo {
-        width: 100px;
-        height: 100px;
+        width: 80px;
+        height: 80px;
         border: 3px solid #fff;
     }
     
     /* Heading and paragraph styles */
     .home h1 {
-        font-size: 1.8em;
+        font-size: 1.5em;
     }
     
     .home p {
@@ -366,5 +221,28 @@ section p {
     
     section p {
         font-size: 0.9em;
+    }
+}
+
+/* Desktop Styles */
+@media (min-width: 769px) {
+    /* Ensure the navbar is positioned at the top and full width */
+    .container {
+        flex-direction: column; /* Stack navbar and content vertically */
+    }
+    
+    .navbar {
+        width: 100%; /* Full width on larger screens */
+        position: relative; /* Flow with content */
+        top: 0;
+        left: 0;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add box shadow for desktop view */
+    }
+    
+    .content {
+        margin-top: 0; /* No top margin needed */
+        padding: 20px;
+        background-size: cover; /* Ensure background covers the full area */
+        text-align: center;
     }
 }
